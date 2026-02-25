@@ -122,7 +122,20 @@ input {
   padding: 40px;
   /* background-color: red; */
 }
-
+button{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background-color: white;
+  color:rgb(14, 82, 73);
+  font-weight: 500;
+  font-size:medium;
+  border:none;
+  padding: 12px;
+  border-radius: 4px;
+  display: flex;
+  margin:auto;
+}
 .contact {
   display: flex;
   justify-content: space-between;
