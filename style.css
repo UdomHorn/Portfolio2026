@@ -1,9 +1,17 @@
-body {
+* {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   color: white;
+  /* width: 90%; */
+  /* background-color: green; */
+  /* margin: auto; */
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
 }
 
 .nav-bar {
@@ -44,7 +52,7 @@ a:hover {
   width: 20%;
   /* background-color: red; */
   font-size: 28px;
-  font-weight: bold;
+  /* font-weight: 600; */
   cursor: pointer;
 }
 
@@ -70,35 +78,48 @@ input {
   height: 2px;
   background-color: black;
   border-radius: 2px;
+  margin-bottom: 20px;
 }
 
 .home-content {
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
-  margin-top: 40px;
   background-color: rgb(14, 82, 73);
+  /* background-color: red; */
   width: 100%;
+  /* height: auto; */
 }
-
+.introduction {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  width: 70%;
+  /* background-color: green; */
+  /* margin-bottom: 40px; */
+}
 
 .image {
   width: 30%;
-  background-color: red;
+  height: 100%;
+  /* background-image: url("image/udom.jpg");
+  background-size: contain;
+  background-repeat: no-repeat; */
 
 }
 
-img {
+.image img {
   width: 100%;
-}
-
-.introduction {
-  width: 70%;
+  height: 100%;
+  object-fit: cover;
+  min-width: 400px;
+  /* min-width: 400px; */
 }
 
 .intro-text {
   width: 70%;
-  margin-left: 40px;
+  /* margin: 40px; */
+  padding: 40px;
   /* background-color: red; */
 }
 
@@ -109,15 +130,9 @@ img {
   background-color: rgb(14, 82, 73);
   /* background-color: red; */
   width: 80%;
-  margin:auto;
-  margin-top: 100px;
-  margin-bottom: 20px;
-}
-
-.contact-left,
-.contact-right {
-  margin: 0 40px;
-
+  margin: auto;
+  /* margin-top: 100px; */
+  /* margin-bottom: 20px; */
 }
 
 .contact-item {
@@ -141,28 +156,41 @@ i {
 }
 
 .experience-skill {
+  /* width: 100%; */
   display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
+  /* justify-content: space-around; */
+  margin-top: 20px;
   gap: 20px;
 }
 
 .experience {
   width: 50%;
   /* margin: 40px; */
-  padding: 0 40px;
-  color: black;
+  padding: 40px;
   border: 1px solid black;
   border-radius: 20px;
 
+  /* background-color: red; */
+
+}
+
+.experience h1,
+.experience p {
+  color: black;
+  font-weight: 500;
+}
+
+.experience img {
+  width: 50%;
 }
 
 .skill-content {
   background-color: rgb(14, 82, 73);
   width: 50%;
   /* margin: 40px; */
-  padding: 20px;
+  padding: 40px;
   border-radius: 20px;
+  /* background-color: green; */
 }
 
 .skill {
@@ -175,8 +203,20 @@ i {
 }
 
 .project-content {
+  width: 100%;
   color: black;
+  /* background-color: red; */
+  /* padding:40px; */
 
+}
+
+.project-content h1 {
+  color: black;
+  font-weight: 500;
+}
+
+.project-content h1 {
+  padding: 0 40px;
 }
 
 .project {
@@ -191,44 +231,57 @@ i {
 
   width: 50%;
   background-color: rgb(14, 82, 73);
+  /* background-color: red; */
   color: white;
   border-radius: 20px;
-  padding: 20px;
+  padding: 40px;
   border: none;
 }
 
-.project-item {
-  /* width: 30%; */
-  background-color: red;
+.project-left h2 {
+  color: white;
+  font-weight: 500;
 }
 
-.project-item-left a{
-  color:white;
+.project-item-left a {
+  color: white;
 }
+
 .project-item-right a {
   color: black;
 }
+
 .project-right {
   width: 50%;
   /* margin: 40px; */
-  padding: 20px;
+  padding: 40px;
   color: black;
 
   border-radius: 20px;
   /* background-color: red; */
 }
-.list-project{
+
+.project-right h2 {
+  color: black;
+  font-weight: 500;
+}
+
+.list-project {
   cursor: pointer;
 }
+
 .project-right {
   width: 50%;
   border: 1px solid black;
+  /* background-color: red; */
+  /* margin: 40px; */
+  /* padding:40px; */
 
 }
 
 .project-react {
-  display: flex;
-  /* text-align: center; */
+  /* display: flex; */
+  text-align: center;
   /* align-items: center; */
   margin-top: 40px;
   /* padding: 0 40px; */
@@ -237,14 +290,14 @@ i {
   border-radius: 20px;
   /* background-color: red; */
   padding: 20px;
-  
+
 }
-.project-react-content {
-  margin: auto;
-  /* background-color: green; */
-  
+
+.project-react h1 {
+  color: rgb(14, 82, 73);
 }
-.project-react a{
+
+.project-react a {
   color: rgb(14, 82, 73);
   display: block;
 }
@@ -258,10 +311,15 @@ i {
   width: 100%;
 }
 
-@media (max-width: 1000px) {
-  .search {
+@media (max-width: 768px) {
+
+  ul li {
     display: none;
-  }
+  } 
+
+
+ 
+
   .contact,
   .home-content,
   .experience-skill,
@@ -269,26 +327,37 @@ i {
   .skill {
     display: block;
   }
-  .project-right{
-    margin-top: 20PX;
+
+  .image{
+    width: 100%;
+    /* object-fit: contain; */
   }
-  .skill-content{
-    margin-top: 20px;
-  }
-  
+
+
   .introduction,
-  .image,
   .experience,
   .skill-content,
   .project-left,
-  .project-right {
-    width: 100%;
-    /* text-align: center; */
+  .project-right,
+  .contact {
+    width: 80%;
+    margin: auto;
+    /* background-color: green; */
   }
+
+  .skill-content,
+  .experience,
+  .project-left,
+  .project-right {
+    margin-top: 20px;
+  }
+
 }
-@media (max-width: 600px) {
-  ul li {
+
+
+@media (max-width: 900px) {
+  .search {
     display: none;
   }
-  
+
 }
