@@ -1,0 +1,294 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgb(224, 216, 216); */
+  font-size: 22px;
+  color: black;
+}
+
+.nav-left {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: rgb(48, 216, 62); */
+  width: 50%;
+  padding: 8px;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  /* background-color: red; */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(63, 63, 63);
+}
+
+.logo {
+  width: 20%;
+  /* background-color: red; */
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input {
+  width: 300px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding-left: 20px;
+}
+
+
+
+
+
+/* .search{
+  width: 400px;
+  background-color: red;
+} */
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  border-radius: 2px;
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin-top: 40px;
+  background-color: rgb(14, 82, 73);
+  width: 100%;
+}
+
+
+.image {
+  width: 30%;
+  background-color: red;
+
+}
+
+img {
+  width: 100%;
+}
+
+.introduction {
+  width: 70%;
+}
+
+.intro-text {
+  width: 70%;
+  margin-left: 40px;
+  /* background-color: red; */
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 40px; */
+  background-color: rgb(14, 82, 73);
+  /* background-color: red; */
+  width: 80%;
+  margin:auto;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.contact-left,
+.contact-right {
+  margin: 0 40px;
+
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  /* background-color: #af4646; */
+}
+
+.icon-border {
+  padding: 6px;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+
+}
+
+i {
+  font-size: 28px;
+  color: rgb(14, 82, 73);
+}
+
+.experience-skill {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.experience {
+  width: 50%;
+  /* margin: 40px; */
+  padding: 0 40px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 20px;
+
+}
+
+.skill-content {
+  background-color: rgb(14, 82, 73);
+  width: 50%;
+  /* margin: 40px; */
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  width: 70%;
+  /* background-color: red; */
+}
+
+.project-content {
+  color: black;
+
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px;
+
+}
+
+.project-left {
+
+  width: 50%;
+  background-color: rgb(14, 82, 73);
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+  border: none;
+}
+
+.project-item {
+  /* width: 30%; */
+  background-color: red;
+}
+
+.project-item-left a{
+  color:white;
+}
+.project-item-right a {
+  color: black;
+}
+.project-right {
+  width: 50%;
+  /* margin: 40px; */
+  padding: 20px;
+  color: black;
+
+  border-radius: 20px;
+  /* background-color: red; */
+}
+.list-project{
+  cursor: pointer;
+}
+.project-right {
+  width: 50%;
+  border: 1px solid black;
+
+}
+
+.project-react {
+  display: flex;
+  /* text-align: center; */
+  /* align-items: center; */
+  margin-top: 40px;
+  /* padding: 0 40px; */
+  color: rgb(14, 82, 73);
+  border: 1px solid rgb(14, 82, 73);
+  border-radius: 20px;
+  /* background-color: red; */
+  padding: 20px;
+  
+}
+.project-react-content {
+  margin: auto;
+  /* background-color: green; */
+  
+}
+.project-react a{
+  color: rgb(14, 82, 73);
+  display: block;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .search {
+    display: none;
+  }
+  .contact,
+  .home-content,
+  .experience-skill,
+  .project,
+  .skill {
+    display: block;
+  }
+  .project-right{
+    margin-top: 20PX;
+  }
+  .skill-content{
+    margin-top: 20px;
+  }
+  
+  .introduction,
+  .image,
+  .experience,
+  .skill-content,
+  .project-left,
+  .project-right {
+    width: 100%;
+    /* text-align: center; */
+  }
+}
+@media (max-width: 600px) {
+  ul li {
+    display: none;
+  }
+  
+}
