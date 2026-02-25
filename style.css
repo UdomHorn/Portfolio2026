@@ -215,23 +215,69 @@ i {
   /* background-color: red; */
 }
 
-.project-content {
+.project-container {
   width: 100%;
-  color: black;
+  /* color: black; */
   /* background-color: red; */
   /* padding:40px; */
 
 }
 
-.project-content h1 {
+.project-container h1 {
   color: black;
   font-weight: 500;
-}
-
-.project-content h1 {
   padding: 0 40px;
 }
 
+.project-content{
+  display: flex;
+  align-items: center;
+}
+.project-content-left{
+  background-color: rgb(14, 82, 73);
+  color: white;
+  width: 30%;
+}
+.project-content-right{
+  background-color: white;
+  color:rgb(14, 82, 73);
+  width: 70%;
+  border-radius: 20px;
+  padding-left: 20px;
+
+}
+.project-content-right p{
+  color:rgb(14, 82, 73);
+}
+.project-content-right p:first-child{
+  /* color:black; */
+  font-weight: bold;
+  text-align: center;
+}
+.project-content-javascript-left a{
+  font-weight: 500;
+}
+.project-content-javascript-left{
+  /* background-color: rgb(14, 82, 73); */
+  color: black;
+  width: 30%;
+}
+.project-content-javascript-right{
+  background-color: rgb(14, 82, 73);
+  /* color:rgb(14, 82, 73); */
+  width: 70%;
+  border-radius: 20px;
+  padding-left: 20px;
+
+}
+.project-content-javascript-right p:first-child{
+  /* color:black; */
+  font-weight: bold;
+  text-align: center;
+}
+/* .project-content-javascript-right p{
+  color:black;
+} */
 .project {
   display: flex;
   justify-content: space-between;
