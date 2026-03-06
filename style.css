@@ -50,6 +50,14 @@
   /* background-color: red; */
 }
 
+.nav-bar-computer ul li {
+  transition-duration: 0.3s;
+}
+
+.nav-bar-computer ul li:hover{
+  transform: scale(0.95);
+}
+
 .nav-bar-mobile {
   /* background-color: red; */
   background-color: white;
@@ -72,30 +80,29 @@
   /* color: white; */
   /* background-color: red; */
   padding: 10px;
+  transition-duration: 0.3s;
 }
-
 .nav-bar-mobile ul li:hover {
   background-color: rgb(14, 82, 73);
+  transform: scale(0.95);
 }
-
 a {
   text-decoration: none;
   color: black;
 }
 
-/* 
-a:hover {
-  color: rgb(63, 63, 63);
-} */
+
 
 .logo {
   width: 20%;
-  /* background-color: red; */
   font-size: 28px;
-  /* font-weight: 600; */
   cursor: pointer;
+  font-weight: bolder;
+  /* transition-duration: 0.3s; */
 }
-
+.logo:hover{
+  transform: scale(0.95);
+}
 input {
   width: 300px;
   height: 40px;
@@ -166,7 +173,14 @@ input {
   padding: 40px;
   /* background-color: red; */
 }
-
+h1{
+  /* color:red; */
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+h1:hover{
+  transform: scale(0.98);
+}
 button {
   position: fixed;
   bottom: 20px;
@@ -180,7 +194,9 @@ button {
   border-radius: 4px;
   display: flex;
   margin: auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
+
 
 .contact {
   display: flex;
@@ -206,7 +222,12 @@ button {
   border: none;
   border-radius: 4px;
   margin-right: 10px;
+  transition-duration: 0.3s;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 
+}
+.icon-border:hover{
+  transform: scale(0.95);
 }
 
 i {
@@ -229,9 +250,14 @@ i {
   padding: 40px;
   border: 1px solid black;
   border-radius: 20px;
-
+  transition-duration: 0.2s;
   /* background-color: red; */
+}
 
+.experience:hover{
+  transform: scale(0.95);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  border: 1px solid white;
 }
 
 .experience h1,
@@ -251,6 +277,11 @@ i {
   padding: 40px;
   border-radius: 20px;
   /* background-color: green; */
+  transition-duration: 0.2s;
+}
+.skill-content:hover{
+  transform: scale(0.95);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
 .skill {
@@ -268,6 +299,7 @@ i {
   /* background-color: red; */
   /* padding:40px; */
   margin-top: 100px;
+  /* box-shadow: 0 8px 20px rgba(0,0,0,0.2); */
 }
 
 .project-container h1 {
@@ -358,6 +390,11 @@ i {
   border-radius: 20px;
   padding: 40px;
   border: none;
+  transition-duration: 0.3s;
+}
+.project-left:hover{
+  transform: scale(0.95);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
 .project-left h2 {
@@ -381,8 +418,15 @@ i {
 
   border-radius: 20px;
   /* background-color: red; */
+  transition-duration: 0.2s;
+  
 }
 
+.project-right:hover{
+  transform: scale(0.95);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  border:1px solid white;
+}
 .project-right h2 {
   color: black;
   font-weight: 500;
@@ -412,9 +456,14 @@ i {
   border-radius: 20px;
   /* background-color: red; */
   padding: 20px;
+  transition-duration: 0.2s;
 
 }
-
+.project-react:hover{
+  transform: scale(0.95);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  border:1px solid white;
+}
 .project-react h1 {
   color: rgb(14, 82, 73);
 }
