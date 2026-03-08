@@ -157,9 +157,11 @@ input {
 .image-profile {
   width: 30%;
   height: 100%;
+  /* object-fit: fill; */
   /* background-image: url("image/udom.jpg");
   background-size: contain;
   background-repeat: no-repeat; */
+
 
 }
 
@@ -169,6 +171,8 @@ input {
   object-fit: cover;
   min-width: 400px;
   /* min-width: 400px; */
+  /* border: 2px solid red; */
+  overflow: hidden;
 }
 
 .intro-text {
@@ -308,29 +312,31 @@ i {
   width: 100%;
   /* height: 100vh; */
   margin-top: 100px;
-  background-color: rgba(255, 255, 255, 0.15);
+  /* background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-  
+   */
 }
 
-.project-container h1{
-  color:black;
+.project-container h1 {
+  color: black;
   font-weight: 500;
-  padding:40px;
-  
- 
+  padding: 40px;
+
+
 }
-.project-content{
+
+.project-content {
   display: flex;
   flex-wrap: wrap;
-  gap:20px;
-  justify-content: center; 
+  gap: 20px;
+  justify-content: center;
 }
-.project{
+
+.project {
   width: 400px;
   height: 400px;
-  padding:12px;
+  padding: 12px;
   /* background-color: rgba(95, 95, 95, 0.15); */
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
@@ -340,10 +346,11 @@ i {
   transition-duration: 0.3s;
 }
 
-.project:hover{
+.project:hover {
   transform: scale(0.95);
 }
-.images{
+
+.images {
   background-color: green;
   /* padding: 8px; */
   /* margin: 8px; */
@@ -354,32 +361,37 @@ i {
   /* border:3px solid red; */
   /* margin:8px; */
 }
-.images img{
+
+.images img {
   width: 100%;
   height: 100%;
   /* object-fit:cover; */
   /* border: 2px solid red; */
 }
-.project-detail{
+
+.project-detail {
   width: 100%;
   height: 150px;
   /* background-color: blue; */
   overflow: hidden;
   position: relative;
 }
-.project-title{
+
+.project-title {
   font-weight: 500;
-  color:black;
+  color: black;
 }
-.text-detail{
+
+.text-detail {
   font-size: 12px;
-  color:gray;
+  color: gray;
 
 }
-.demo{
+
+.demo {
   position: absolute;
   right: 0;
-  bottom:8px;
+  bottom: 8px;
   background-color: rgba(95, 95, 95, 0.15);
   backdrop-filter: blur(10px);
   /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); */
@@ -387,21 +399,24 @@ i {
   border-radius: 4px;
   cursor: pointer;
 }
-.demo:hover{
+
+.demo:hover {
   background-color: rgba(56, 56, 56, 0.15);
 }
 
-.demo a, .demo i{
+.demo a,
+.demo i {
   /* color:black; */
   font-size: 14px;
-  
+
 }
+
 .footer {
   background-color: black;
   color: white;
   text-align: center;
   padding: 10px;
-  margin-top: 40px;
+  margin-top: 100px;
   width: 100%;
 }
 
@@ -411,13 +426,14 @@ i {
     display: none;
   }
 
-  .project-container{
-    padding:0;
+  .project-container {
+    padding: 0;
   }
 
-  .project-container h1{
+  .project-container h1 {
     padding: 40px;
   }
+
   .contact,
   .home-content,
   .experience-skill,
@@ -428,6 +444,9 @@ i {
   .image-profile {
     width: 100%;
     /* object-fit: contain; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
   }
 
 
@@ -487,12 +506,3 @@ i {
 .about {
   color: black;
 }
-
-
-
-
-
-
-
-
-

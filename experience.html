@@ -16,7 +16,8 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container" id="filters">
+
     <div class="nav-bar-container">
       <div class="nav-bar">
         <div class="nav-left">
@@ -31,11 +32,12 @@
           </div>
         </div>
         <div class="search">
-          <input type="text" name="" id="" placeholder="Search">
+          <input type="text" name="" id="searchBox" placeholder="Search">
         </div>
         <div class="bar" onclick="Showmenu()"><i class="fa-solid fa-bars"></i></div>
         <div class="x" onclick="Hidemenu()"><i class="fa-solid fa-x"></i></div>
       </div>
+      
       <div class="line"></div>
       <div class="nav-bar-mobile">
         <ul>
@@ -47,15 +49,15 @@
       </div>
     </div>
 
-    <!-- Experience-skill -->
-
-    <div class="experience-skill">
-      <div class="experience">
+     <!-- Experience-skill -->
+  
+     <div class="experience-skill ">
+      <div class="experience filter">
         <h1>Experience</h1>
         <img src="image/image.png" alt="">
         <p>Be my first job offer TT</p>
       </div>
-      <div class="skill-content">
+      <div class="skill-content filter">
         <h1>Skills</h1>
         <div class="skill">
           <div>
@@ -116,13 +118,12 @@
       </div>
     </div>
 
+    <a href="image/Udom-2026.pdf" target="_blank" download><button>Download Resume</button></a>
 
-    <div class="footer">
+    <div class="footer ">
+      <!-- <h1></h1> -->
       <p>UdomHorn @2026</p>
     </div>
-
-
-    <a href="image/Udom-2026.pdf" target="_blank" download><button>Download Resume</button></a>
   </div>
 </body>
 <script src="index.js"></script>

@@ -18,3 +18,27 @@ function Hidemenu() {
     x.style.display = "none";
   }
 }
+
+// Filter --------------------------------------
+
+const searchBox = document.getElementById("searchBox");
+const filters = document.querySelectorAll(".filter");
+
+searchBox.addEventListener("keyup", function () {
+
+  const searchText = searchBox.value.toLowerCase();
+
+  filters.forEach(function(filter){
+
+    const filterName = filter.querySelector("h1").textContent.toLowerCase();
+
+    if(filterName.includes(searchText)){
+      filter.style.display = "block";
+    }else{
+      filter.style.display = "none";
+    }
+
+  });
+
+});
+

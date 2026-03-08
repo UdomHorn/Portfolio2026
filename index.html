@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container " id="filters">
 
     <div class="nav-bar-container">
       <div class="nav-bar">
@@ -32,7 +32,7 @@
           </div>
         </div>
         <div class="search">
-          <input type="text" name="" id="" placeholder="Search">
+          <input type="text" name="" id="searchBox" placeholder="Search">
         </div>
         <div class="bar" onclick="Showmenu()"><i class="fa-solid fa-bars"></i></div>
         <div class="x" onclick="Hidemenu()"><i class="fa-solid fa-x"></i></div>
@@ -49,213 +49,218 @@
       </div>
     </div>
     <!-- home -->
-    <div class="home-content">
-      <div class="introduction">
-        <div>
-          <div class="intro-text">
-            <h1>Hellooo!</h1>
-            <p>My name is udom, I love learning and I want to extend my knowledge in coding and AI</p>
-            <p>Looking for a frontend/backend internship to get new challenges to improve my skill.I'm prepared to do my
-              best .I believe I will grow faster and stronger in this generation of technology.</p>
+   
+      <div class="home-content ">
+        <div class="introduction filter ">
+          <div >
+            <div class="intro-text">
+              <h1>Hellooo!</h1>
+              <p>My name is udom, I love learning and I want to extend my knowledge in coding and AI</p>
+              <p>Looking for a frontend/backend internship to get new challenges to improve my skill.I'm prepared to do my
+                best .I believe I will grow faster and stronger in this generation of technology.</p>
+            </div>
+            <div class="contact">
+              <div class="contact-left">
+                <div class="contact-item">
+                  <div class="icon-border"><i class="fa-regular fa-envelope"></i></div>
+                  <p>
+                    udomhorn04@gmail.com
+                  </p>
+                </div>
+                <div class="contact-item">
+                  <div class="icon-border"><i class="fa-brands fa-facebook"></i></div>
+                  <p>
+                    Horn Udom
+                  </p>
+                </div>
+                <div class="contact-item">
+                  <div class="icon-border"><i class="fa-solid fa-phone"></i></div>
+                  <p>
+                    0965830508
+                  </p>
+                </div>
+              </div>
+              <div class="contact-right">
+                <div class="contact-item">
+                  <div class="icon-border"><i class="fa-brands fa-telegram"></i></div>
+                  <p>
+                    @uudxm
+                  </p>
+                </div>
+                <div class="contact-item">
+                  <div class="icon-border"><i class="fa-solid fa-location-dot"></i></div>
+                  <p>
+                    Phnom Penh, Cambodia
+                  </p>
+                </div>
+              </div>
+            </div>
+  
           </div>
-          <div class="contact">
-            <div class="contact-left">
+        </div>
+        <div class="image-profile filter ">
+          <h1></h1>
+          <img src="image/udom.jpg" alt="">
+          <h1></h1>
+        </div>
+      </div>
+  
+      <!-- Experience-skill -->
+  
+      <div class="experience-skill ">
+        <div class="experience filter">
+          <h1>Experience</h1>
+          <img src="image/image.png" alt="">
+          <p>Be my first job offer TT</p>
+        </div>
+        <div class="skill-content filter">
+          <h1>Skills</h1>
+          <div class="skill">
+            <div>
               <div class="contact-item">
-                <div class="icon-border"><i class="fa-regular fa-envelope"></i></div>
+                <div class="icon-border"><i class="fa-brands fa-html5"></i></div>
                 <p>
-                  udomhorn04@gmail.com
+                  HTML
                 </p>
               </div>
               <div class="contact-item">
-                <div class="icon-border"><i class="fa-brands fa-facebook"></i></div>
+                <div class="icon-border"><i class="fa-brands fa-css"></i></div>
                 <p>
-                  Horn Udom
+                  CSS
                 </p>
               </div>
               <div class="contact-item">
-                <div class="icon-border"><i class="fa-solid fa-phone"></i></div>
+                <div class="icon-border"><i class="fa-brands fa-js"></i></div>
                 <p>
-                  0965830508
-                </p>
-              </div>
-            </div>
-            <div class="contact-right">
-              <div class="contact-item">
-                <div class="icon-border"><i class="fa-brands fa-telegram"></i></div>
-                <p>
-                  @uudxm
+                  JavaScript
                 </p>
               </div>
               <div class="contact-item">
-                <div class="icon-border"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="icon-border"><i class="fa-brands fa-react"></i></div>
                 <p>
-                  Phnom Penh, Cambodia
+                  React
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="contact-item">
+                <div class="icon-border"><i class="fa-brands fa-tailwind-css"></i></div>
+                <p>
+                  Tailwind
+                </p>
+              </div>
+              <div class="contact-item">
+                <div class="icon-border"><i class="fa-brands fa-java"></i></div>
+                <p>
+                  Java
+                </p>
+              </div>
+              <div class="contact-item">
+                <div class="icon-border"><i class="fa-solid fa-database"></i></div>
+                <p>
+                  SQL
+                </p>
+              </div>
+              <div class="contact-item">
+                <div class="icon-border"><i class="fa-brands fa-node"></i></div>
+                <p>
+                  Node Js
                 </p>
               </div>
             </div>
           </div>
-
+          <p>I love learning new technology.I also know how to use design tool like adobe xd and figma.and this recent
+            month I also started to learn backend and API. </p>
         </div>
       </div>
-      <div class="image-profile">
-        <img src="image/udom.jpg" alt="">
+  
+      <!-- Project -->
+  
+      <div class="project-container filter">
+        <h1>Projects</h1>
+  
+        <div class="project-content">
+  
+          <div class="project">
+            <div class="images">
+              <img src="image/facebook.jpg" alt="">
+            </div>
+            <div class="project-detail">
+              <p class="project-title">Facebook Profile Clone</p>
+              <p class="text-detail">Simple HTML & CSS project I build to show my ability on using HTML structure and Styling with CSS</p>
+  
+              <div class="demo">
+                <a href="https://facebook-kappa-steel.vercel.app/"> Live Demo <i class="fa-solid fa-square-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="project">
+            <div class="images">
+              <img src="image/studentlist.png" alt="">
+            </div>
+            <div class="project-detail">
+              <p class="project-title">Student List</p>
+              <p class="text-detail">Small project build using JavaScript.Similar to ToDo List app</p>
+  
+              <div class="demo">
+                <a href="https://student-list-drab.vercel.app/"> Live Demo <i class="fa-solid fa-square-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="project">
+            <div class="images">
+              <img src="image/portfolio.jpg" alt="">
+            </div>
+            <div class="project-detail">
+              <p class="project-title">My First React Portfolio</p>
+              <p class="text-detail">Build using React and Tailwind </p>
+  
+              <div class="demo">
+                <a href="https://portfolio-genus-projects.vercel.app/"> Live Demo <i class="fa-solid fa-square-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="project">
+            <div class="images">
+              <img src="image/cambo-report.jpg" alt="">
+            </div>
+            <div class="project-detail">
+              <p class="project-title">Cambo-Report Clone</p>
+              <p class="text-detail">Build using React and Tailwind. Responsive,but all pictures are save in local machine,  no API ,not funtional and interactive.</p>
+  
+              <div class="demo">
+                <a href="https://cambo-report.vercel.app/"> Live Demo <i class="fa-solid fa-square-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="project">
+            <div class="images">
+              <img src="image/ten11.jpg" alt="">
+            </div>
+            <div class="project-detail">
+              <p class="project-title">Ten11 Clone</p>
+              <p class="text-detail">Build using React and Tailwind. Responsive,but all pictures are save in local machine,  no API ,not funtional and interactive</p>
+  
+              <div class="demo">
+                <a href="https://ten11-kappa.vercel.app/"> Live Demo <i class="fa-solid fa-square-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+  
+          
+        </div>
       </div>
-    </div>
-
-    <!-- Experience-skill -->
-
-    <div class="experience-skill">
-      <div class="experience">
-        <h1>Experience</h1>
-        <img src="image/image.png" alt="">
-        <p>Be my first job offer TT</p>
-      </div>
-      <div class="skill-content">
-        <h1>Skills</h1>
-        <div class="skill">
-          <div>
-            <div class="contact-item">
-              <div class="icon-border"><i class="fa-brands fa-html5"></i></div>
-              <p>
-                HTML
-              </p>
-            </div>
-            <div class="contact-item">
-              <div class="icon-border"><i class="fa-brands fa-css"></i></div>
-              <p>
-                CSS
-              </p>
-            </div>
-            <div class="contact-item">
-              <div class="icon-border"><i class="fa-brands fa-js"></i></div>
-              <p>
-                JavaScript
-              </p>
-            </div>
-            <div class="contact-item">
-              <div class="icon-border"><i class="fa-brands fa-react"></i></div>
-              <p>
-                React
-              </p>
-            </div>
-          </div>
-          <div>
-            <div class="contact-item">
-              <div class="icon-border"><i class="fa-brands fa-tailwind-css"></i></div>
-              <p>
-                Tailwind
-              </p>
-            </div>
-            <div class="contact-item">
-              <div class="icon-border"><i class="fa-brands fa-java"></i></div>
-              <p>
-                Java
-              </p>
-            </div>
-            <div class="contact-item">
-              <div class="icon-border"><i class="fa-solid fa-database"></i></div>
-              <p>
-                SQL
-              </p>
-            </div>
-            <div class="contact-item">
-              <div class="icon-border"><i class="fa-brands fa-node"></i></div>
-              <p>
-                Node Js
-              </p>
-            </div>
-          </div>
-        </div>
-        <p>I love learning new technology.I also know how to use design tool like adobe xd and figma.and this recent
-          month I also started to learn backend and API. </p>
-      </div>
-    </div>
-
-    <!-- Project -->
-
-    <div class="project-container">
-      <h1>Projects</h1>
-
-      <div class="project-content">
-
-        <div class="project">
-          <div class="images">
-            <img src="image/facebook.jpg" alt="">
-          </div>
-          <div class="project-detail">
-            <p class="project-title">Facebook Profile Clone</p>
-            <p class="text-detail">Simple HTML & CSS project I build to show my ability on using HTML structure and Styling with CSS</p>
-
-            <div class="demo">
-              <a href="https://facebook-kappa-steel.vercel.app/"> Live Demo <i class="fa-solid fa-square-arrow-up-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project">
-          <div class="images">
-            <img src="image/studentlist.png" alt="">
-          </div>
-          <div class="project-detail">
-            <p class="project-title">Student List</p>
-            <p class="text-detail">Small project build using JavaScript.Similar to ToDo List app</p>
-
-            <div class="demo">
-              <a href="https://student-list-drab.vercel.app/"> Live Demo <i class="fa-solid fa-square-arrow-up-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project">
-          <div class="images">
-            <img src="image/portfolio.jpg" alt="">
-          </div>
-          <div class="project-detail">
-            <p class="project-title">My First React Portfolio</p>
-            <p class="text-detail">Build using React and Tailwind </p>
-
-            <div class="demo">
-              <a href="https://portfolio-genus-projects.vercel.app/"> Live Demo <i class="fa-solid fa-square-arrow-up-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project">
-          <div class="images">
-            <img src="image/cambo-report.jpg" alt="">
-          </div>
-          <div class="project-detail">
-            <p class="project-title">Cambo-Report Clone</p>
-            <p class="text-detail">Build using React and Tailwind. Responsive,but all pictures are save in local machine,  no API ,not funtional and interactive.</p>
-
-            <div class="demo">
-              <a href="https://cambo-report.vercel.app/"> Live Demo <i class="fa-solid fa-square-arrow-up-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project">
-          <div class="images">
-            <img src="image/ten11.jpg" alt="">
-          </div>
-          <div class="project-detail">
-            <p class="project-title">Ten11 Clone</p>
-            <p class="text-detail">Build using React and Tailwind. Responsive,but all pictures are save in local machine,  no API ,not funtional and interactive</p>
-
-            <div class="demo">
-              <a href="https://ten11-kappa.vercel.app/"> Live Demo <i class="fa-solid fa-square-arrow-up-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        
-      </div>
-    </div>
+    
 
 
     <a href="image/Udom-2026.pdf" target="_blank" download><button>Download Resume</button></a>
 
-    <div class="footer">
+    <div class="footer ">
+      <!-- <h1></h1> -->
       <p>UdomHorn @2026</p>
     </div>
   </div>
